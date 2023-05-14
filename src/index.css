@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  html {
+    font-family: 'Montserrat', sans-serif;
+  }
+  html,
+  body {
+    @apply h-full overflow-x-hidden;
+  }
+  body {
+    @apply pt-[114px] 2xl:pt-[114px] xl:pt-[80px];
+  }
+}
+@layer utilities {
+  #root {
+    @apply h-full;
+  }
+  .navLink {
+    @apply px-4 py-3 2xl:py-3 xl:py-2 text-white font-semibold flex items-end leading-6;
+  }
+  .has_dropdown {
+    @apply relative;
+  }
+  .dropdown {
+    @apply absolute top-[114px] 2xl:top-[114px] xl:top-[80px] left-0 hidden min-w-max flex-col gap-[2px] w-[200px];
+  }
+  .dropdown a {
+    @apply bg-orange-500 py-2 px-4;
+  }
+  .has_dropdown:hover .dropdown {
+    @apply flex;
+  }
+  .homeSlider .swiper-pagination .swiper-pagination-bullet {
+    @apply transition-all duration-500 ease-out !mx-2;
+  }
+  .homeSlider
+    .swiper-pagination
+    .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    @apply !bg-white scale-[2];
+  }
+  .homeSlider .swiper-slide {
+    background-size: cover;
+    background-position: center right;
+  }
+  .section-page {
+    @apply min-h-[calc(100dvh-114px)] 2xl:min-h-[calc(100dvh-114px)] xl:min-h-[calc(100dvh-80px)] py-12 2xl:py-12 xl:py-8;
+  }
+  .homeSlider {
+    @apply h-[calc(100dvh-114px)] 2xl:h-[calc(100dvh-114px)] xl:h-[calc(100dvh-80px)]; 
+  }
+  .heading1 {
+    @apply text-5xl 2xl:text-5xl xl:text-4xl font-bold leading-[90%] tracking-[-2px] text-white
+  }
+  .referenceDiv {
+    @apply fixed top-1/2 right-0 z-20 bg-white p-1.5 px-3 text-sm font-bold text-slate-700 shadow;
+    transform: rotate(90deg) scaleX(-1);
+    transform-origin: top right;
+  }
+  .referenceDiv div {
+    transform: scaleX(-1);
+  }
+  .refList a {
+    @apply underline
+  }
+}
+
+.slide1 {
+  background-image: url('./assets/banners/slide-1.jpg');
+}
+.slide2 {
+  background-image: url('./assets/banners/slide-2.jpg');
+}
+.slide3 {
+  background-image: url('./assets/banners/slide-3.jpg');
+}
+.slide4 {
+  background-image: url('./assets/banners/slide-4.jpg');
+}
+.slide5 {
+  background-image: url('./assets/banners/slide-5.jpg');
+}
+.slide6 {
+  background-image: url('./assets/banners/slide-6.jpg');
+}
+.slide7 {
+  background-image: url('./assets/banners/slide-7.jpg');
+}
+
+.homeSlider .swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+.slider_caption h1 {
+  font-size: 3.75rem;
+  font-weight: bold;
+  transition: all 1s 0.2s ease-in-out;
+  line-height: 1;
+  font-weight: 700;
+  opacity: 0;
+  transform: translateY(120px);
+}
+.slider_caption h2 {
+  font-size: 3rem;
+  transition: all 1s 0.4s ease-in-out;
+  line-height: 1;
+  font-weight: 600;
+  margin-top: 1rem;
+  opacity: 0;
+  transform: translateY(48px);
+}
+.slider_caption h3 {
+  font-size: 1.875rem;
+  transition: all 1s 0.6s ease-in-out;
+  font-weight: normal;
+  opacity: 0;
+  transform: translateY(45px);
+}
+.slider_caption p {
+  font-size: 1.875rem;
+  transition: all 1s 0.2s ease-in-out;
+  opacity: 0;
+  transform: translateY(45px);
+}
+.swiper-slide-active .slider_caption h1,
+.swiper-slide-active .slider_caption h2,
+.swiper-slide-active .slider_caption h3,
+.swiper-slide-active .slider_caption p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section-Whatispnemonia {
+  background: url("./assets/bgs/bg-1.jpg") center;
+  background-size: cover;
+}
+.section-Typesofpnemonia, .section-Symptomsandsigns, .section-Diseaseburden, .section-Complicationsofpnemonia {
+  background: url("./assets/bgs/bg-2.jpg") center;
+  background-size: cover;
+}
+.section-Riskscore, .section-Riskfactor {
+  background: url("./assets/bgs/bg-3.jpg") center;
+  background-size: cover;
+}
+
+.section-Preventivetechniques {
+  background: url("./assets/bgs/bg-3.jpg") center;
+  background-size: cover;
+}
+.section-Patientawareness {
+  background: url("./assets/bgs/bg-4.jpg") center;
+  background-size: cover;
+}
+.section-Types, .section-Benefits, .section-LocateDoctors, .section-References {
+  background: url("./assets/bgs/bg-4.jpg") center;
+  background-size: cover;
+}
+
+.section-Diseaseburden .custom-pagination {
+  @apply absolute !bottom-8 left-0 right-0 mx-auto flex items-center justify-center gap-2;
+}
+.section-Diseaseburden .custom-pagination .swiper-pagination-bullet {
+  @apply transition-all duration-500 ease-out !mx-2;
+}
+.section-Diseaseburden
+  .custom-pagination
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  @apply !bg-white scale-[2];
+}
+.customInput {
+  @apply text-white text-xl flex gap-2 items-center cursor-pointer;
+}
+.customInput i {
+  @apply w-6 h-6 rounded-full bg-white shrink-0 flex items-center justify-center after:w-4 after:h-4 after:bg-white after:rounded-full after:transition-all after:duration-300 after:scale-0;
+}
+.customInput input:checked + i {
+  @apply w-6 h-6 rounded-full bg-white shrink-0 flex items-center justify-center after:w-4 after:h-4 after:bg-teal-500 after:rounded-full after:scale-100;
+}
+.leftcheck .customInput i {
+  @apply order-1;
+}
+.leftcheck .customInput {
+  @apply justify-end;
+}
+.arrow {
+  width: 49px;
+  height: 250px;
+  background: url("./assets/risk/arrow.png");
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 0;
+  transform-origin: bottom center;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.arrowCircle {
+  width: 54px;
+  height: 54px;
+  background: url("./assets/risk/arrowCircle.png");
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  top: 220px;
+}
+.selected {
+  @apply relative;
+}
+.selected img {
+  filter: brightness(100);
+}
+.manImg {
+  background: url("./assets/symptoms/man.png");
+  background-size: cover;
+}
+.circleImg {
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+.tooltipBox {
+  transition: all 0.3s ease-in-out;
+}
+@keyframes pulse {
+  0% {
+    -moz-box-shadow: 0 0 0 0 #9fbc3b;
+    box-shadow: 0 0 0 0 #9fbc3b;
+  }
+  70% {
+      -moz-box-shadow: 0 0 0 50px rgba(204,169,44, 0);
+      box-shadow: 0 0 0 50px rgba(204,169,44, 0);
+  }
+  100% {
+      -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+      box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+  }
+}
