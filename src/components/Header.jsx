@@ -2,6 +2,7 @@ import MAINLOGO from "./../assets/logos/main_logo.png";
 import GCCPLLOGO from "./../assets/logos/gccpl_logo.png";
 import FBLOGO from "./../assets/images/fb.png";
 import INSTALOGO from "./../assets/images/insta.png";
+import LinkedinLOGO from "./../assets/images/linkedin.png";
 import { Link, NavLink, useLocation } from "react-router-dom";
 
 export default function Header() {
@@ -173,6 +174,13 @@ export default function Header() {
             className="self-center"
           >
             <img src={INSTALOGO} alt="insta" className="w-11 xl:w-8" />
+          </NavLink>
+          <NavLink
+            to="https://www.linkedin.com/company/gccpl/?originalSubdomain=in"
+            target="_blank"
+            className="self-center"
+          >
+            <img src={LinkedinLOGO} alt="insta" className="w-11 xl:w-8" />
           </NavLink>
         </div>
       </div>

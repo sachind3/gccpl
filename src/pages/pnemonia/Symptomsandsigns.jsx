@@ -19,7 +19,10 @@ export default function Symptomsandsigns() {
       <section className="section-Symptomsandsigns section-page py-12 flex items-center justify-center">
         <div className="container mx-auto px-4">
           <h1 className="heading1 mb-4">
-            <AnimatedWords title="Types of Pneumonia" />
+            <AnimatedWords title="Symptoms & Signs" />{" "}
+            <sup className="font-normal text-lg -translate-y-4 relative inline-block">
+              2
+            </sup>
           </h1>
           <div className="flex flex-col justify-start items-start w-1/2">
             <ul>

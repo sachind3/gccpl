@@ -19,7 +19,10 @@ export default function Diseaseburden() {
       <section className="section-Diseaseburden section-page  flex items-center justify-center">
         <div className="container mx-auto px-4">
           <h1 className="heading1 mb-4">
-            <AnimatedWords title="Disease Burden" />
+            <AnimatedWords title="Disease Burden" />{" "}
+            <sup className="font-normal text-lg -translate-y-4 relative inline-block">
+              7, 8, 23
+            </sup>
           </h1>
           <div>
             <Swiper

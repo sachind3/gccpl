@@ -24,8 +24,7 @@ export default function Benefits() {
               </p>
               <p className="py-2">
                 Reduces the risk of severe pneumonia and hospitalization, and
-                minimizes the risk of complications and death due to
-                pneumonia.AnimatedWord
+                minimizes the risk of complications and death due to pneumonia.
               </p>
               <p className="py-2">
                 Significantly reduces the risk of Invasive Pneumococcal Disease

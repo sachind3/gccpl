@@ -49,7 +49,10 @@ export default function Riskfactor() {
       <section className="section-Riskfactor section-page flex items-start justify-center">
         <div className="container mx-auto px-4">
           <h1 className="heading1 mb-4">
-            <AnimatedWords title="Risk Factors" />
+            <AnimatedWords title="Risk Factors" />{" "}
+            <sup className="font-normal text-lg -translate-y-4 relative inline-block">
+              14, 15, 16, 17, 18, 21
+            </sup>
           </h1>
           <div className="flex items-center justify-between gap-8 mb-3 mt-4">
             {tabItems.length &&

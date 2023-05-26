@@ -30,7 +30,7 @@ export default function Home() {
             para={`Who are susceptible to`}
             heading1={`Pneumococcal<br />Infection?`}
             heading2={`Elderly`}
-            heading3={`65 years or older`}
+            heading3={`65 years or older<sup>1</sup>`}
           />
         </SwiperSlide>
         <SwiperSlide className={`slide2`}>
@@ -38,7 +38,7 @@ export default function Home() {
             para={`Who are susceptible to`}
             heading1={`Pneumococcal<br />Infection?`}
             heading2={`Adults`}
-            heading3={`with lung diseases<br />like COPD`}
+            heading3={`with lung diseases<br />like COPD<sup>1</sup>`}
           />
         </SwiperSlide>
         <SwiperSlide className={`slide3`}>
@@ -46,7 +46,7 @@ export default function Home() {
             para={`Who are susceptible to`}
             heading1={`Pneumococcal<br />Infection?`}
             heading2={`Adults`}
-            heading3={`with chronic<br />kidney disease (CKD)`}
+            heading3={`with chronic<br />kidney disease (CKD)<sup>1,21</sup>`}
           />
         </SwiperSlide>
         <SwiperSlide className={`slide4`}>
@@ -54,7 +54,7 @@ export default function Home() {
             para={`Who are susceptible to`}
             heading1={`Pneumococcal<br />Infection?`}
             heading2={`Adults`}
-            heading3={`with immune deficiency`}
+            heading3={`with immune deficiency<sup>1</sup>`}
           />
         </SwiperSlide>
         <SwiperSlide className={`slide5`}>
@@ -62,7 +62,7 @@ export default function Home() {
             para={`Who are susceptible to`}
             heading1={`Pneumococcal<br />Infection?`}
             heading2={`Individuals`}
-            heading3={`with smoking habits`}
+            heading3={`with smoking habits<sup>1</sup>`}
           />
         </SwiperSlide>
         <SwiperSlide className={`slide6`}>
@@ -70,7 +70,7 @@ export default function Home() {
             para={`Who are susceptible to`}
             heading1={`Pneumococcal<br />Infection?`}
             heading2={`Individuals`}
-            heading3={`with diabetes`}
+            heading3={`with diabetes<sup>1</sup>`}
           />
         </SwiperSlide>
         <SwiperSlide className={`slide7`}>
@@ -78,7 +78,7 @@ export default function Home() {
             para={`Who are susceptible to`}
             heading1={`Pneumococcal<br />Infection?`}
             heading2={`Individuals`}
-            heading3={`with heart disease`}
+            heading3={`with heart disease<sup>1</sup>`}
           />
         </SwiperSlide>
         {/* <SwiperNavButtons /> */}

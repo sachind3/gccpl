@@ -21,7 +21,7 @@ export default function Whatispnemonia() {
             bacterial, viral or fungal infection. The infection and inflammation
             can cause the air sacs of the lung to swell up and get filled with
             fluid or pus. This can decrease the effective gaseous exchange of
-            oxygen and carbon dioxide that occurs here.
+            oxygen and carbon dioxide that occurs here.<sup>2</sup>
           </div>
           <div className="grid text-white grid-cols-2 max-w-4xl mx-auto gap-8">
             <div className="mt-4">

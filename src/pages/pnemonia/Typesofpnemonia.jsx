@@ -17,7 +17,7 @@ export default function Typesofpnemonia() {
             <AnimatedWords title="Types of Pneumonia" />
           </h1>
           <div className="text-white text-xl 2xl:text-xl xl:text-lg">
-            Pneumonia can be classified in 2 ways based on:
+            Pneumonia can be classified in 2 ways. <sup>2</sup>
           </div>
           <div className="grid text-white grid-cols-2 max-w-4xl mx-auto gap-8 mt-6">
             <div>
@@ -45,8 +45,10 @@ export default function Typesofpnemonia() {
                 />
               </div>
               <h4 className="font-semibold text-2xl 3xl:text-2xl xl:text-xl mt-4">
-                Hospital Acquired Pneumonia (HAP) or Ventilator Acquired
-                Pneumonia that are acquired during hospitalization
+                <ul>
+                  <li>Hospital Associated Pneumonia (HAP)</li>
+                  <li>Ventilator Acquired Pneumonia (VAP)</li>
+                </ul>
               </h4>
             </div>
           </div>

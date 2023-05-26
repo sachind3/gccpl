@@ -25,7 +25,7 @@ export const complications = [
   {
     id: 3,
     title: "Bronchial obstruction",
-    para: "AIRWAY",
+    para: "Airway",
     img: IMG3,
     top: 24,
     left: 37.5,
@@ -49,7 +49,7 @@ export const complications = [
   {
     id: 6,
     title: "Pericarditis",
-    para: "INFLAMMATION OF THE COVERING OF THE HEART",
+    para: "Inflammation of the covering of the heart",
     img: IMG6,
     top: 24,
     left: 37.5,

@@ -23,8 +23,8 @@ export default function References() {
                 </Link>
               </li>
               <li>
-                <Link to="https://www.cdc.gov/pneumococcal/global.html">
-                  https://www.cdc.gov/pneumococcal/global.html
+                <Link to="https://www.cdc.gov/pneumonia/causes.html">
+                  https://www.cdc.gov/pneumonia/causes.html
                 </Link>
               </li>
               <li>
@@ -122,43 +122,27 @@ export default function References() {
                   Moe H. Kyaw, Charles E. Rose, Jr, Alicia M. Fry et.al.; The
                   influence of chronic illnesses on the incidence of invasive
                   pneumococcal disease in adults; J Infect Dis. 2005 Aug 1;
-                  192(3): 377-386. Published online 2005 Jun 23.
-                </p>
-              </li>
-              <li>
-                <p>
-                  Liu J. Impact of diabetes mellitus on pneumonia mortality in a
-                  senior population: results from the NHANES III follow-up
-                  study. J Geriatr Cardiol. 2013 Sep;10(3):267-71
-                </p>
-              </li>
-              <li>
-                <p>
-                  Kuo CS, et al. Effectiveness of 23-valent pneumococcal
-                  polysaccharide vaccine on diabetic elderly. Medicine
-                  (Baltimore). 2016 Jun;95(26):e4064
-                </p>
-              </li>
-              <li>
-                <p>
-                  American Diabetes Association Professional Practice Committee;
-                  4. Comprehensive Medical Evaluation and Assessment of
-                  Comorbidities: Standards of Medical Care in Diabetes—2022.
-                  Diabetes Care 1 January 2022; 45 (Supplement_1): S46-S59.
+                  192(3): 377-386. Published online 2005 Jun 23. Liu J. Impact
+                  of diabetes mellitus on pneumonia mortality in a senior
+                  population: results from the NHANES III follow-up study. J
+                  Geriatr Cardiol. 2013 Sep;10(3):267-71. Kuo CS, et al.
+                  Effectiveness of 23-valent pneumococcal polysaccharide vaccine
+                  on diabetic elderly. Medicine (Baltimore). 2016
+                  Jun;95(26):e4064. American Diabetes Association Professional
+                  Practice Committee; 4. Comprehensive Medical Evaluation and
+                  Assessment of Comorbidities: Standards of Medical Care in
+                  Diabetes—2022. Diabetes Care 1 January 2022; 45
+                  (Supplement_1): S46-S59.
                 </p>
               </li>
               <li>
                 <p>
                   Mahashur A et al. Role of Pneumococcal Vaccination in Chronic
-                  Lung Diseases. JAPI Apr 2015. Vol 63. Special issue
-                </p>
-              </li>
-              <li>
-                <p>
-                  Kurashima K, Takaku Y, Nakamoto K, et al. Risk factors for
-                  pneumonia and the effect of the pneumococcal vaccine in
-                  patients with chronic airflow obstruction. Chronic Obstr Pulm
-                  Dis. 2016; 3(3): 610-619.
+                  Lung Diseases. JAPI Apr 2015. Vol 63. Special issue. Kurashima
+                  K, Takaku Y, Nakamoto K, et al. Risk factors for pneumonia and
+                  the effect of the pneumococcal vaccine in patients with
+                  chronic airflow obstruction. Chronic Obstr Pulm Dis. 2016;
+                  3(3): 610-619.
                 </p>
               </li>
               <li>
