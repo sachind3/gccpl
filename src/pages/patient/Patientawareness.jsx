@@ -1,23 +1,25 @@
 import { useState } from "react";
 import { AnimatedWords } from "../../components/Animations";
-import SLIDE1 from "./../../assets/patient/slider/slide-1.png";
-import SLIDE2 from "./../../assets/patient/slider/slide-2.png";
-import SLIDE3 from "./../../assets/patient/slider/slide-3.png";
-import SLIDE4 from "./../../assets/patient/slider/slide-4.png";
-import SLIDE5 from "./../../assets/patient/slider/slide-5.png";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { A11y, Navigation, Pagination } from "swiper";
+// import SLIDE1 from "./../../assets/patient/slider/slide-1.png";
+// import SLIDE2 from "./../../assets/patient/slider/slide-2.png";
+// import SLIDE3 from "./../../assets/patient/slider/slide-3.png";
+// import SLIDE4 from "./../../assets/patient/slider/slide-4.png";
+// import SLIDE5 from "./../../assets/patient/slider/slide-5.png";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { A11y, Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import DownloadModal from "./../../components/DownloadModal";
 import TransitionEffect from "../../components/TransitionEffect";
 import { Helmet } from "react-helmet";
-
+import Fancybox from "./../../components/fancybox";
+import LEAFLET from "./../../assets/images/leaflet.png";
+import { Link } from "react-router-dom";
 export default function Patientawareness() {
   const [show, setShow] = useState(false);
-  const openModal = () => {
-    setShow(true);
-  };
+  // const openModal = () => {
+  //   setShow(true);
+  // };
   return (
     <>
       <Helmet>
@@ -32,104 +34,85 @@ export default function Patientawareness() {
           <h1 className="heading1 mb-4">
             <AnimatedWords title="Awareness & Prevention" />
           </h1>
-          <div className="mt-4">
-            <Swiper
-              slidesPerView={5}
-              spaceBetween={30}
-              navigation={{
-                prevEl: ".prevBtn",
-                nextEl: ".nextBtn",
-              }}
-              pagination={{
-                clickable: true,
-                el: ".custom-pagination",
-                type: "bullets",
-              }}
-              loop={true}
-              modules={[Navigation, Pagination, A11y]}
-              autoplay={{
-                delay: 4000,
-                disableOnInteraction: false,
-              }}
-              className="diseaseSlider"
-            >
-              <SwiperSlide>
-                <div className="flex flex-col space-y-3">
-                  <img src={SLIDE1} alt="img1" width={"100%"} height={"auto"} />
-                  <p className="text-white text-xl 2xl:text-xl xl:text-base text-center line-clamp-2 min-h-[56px]">
-                    Pneumonia & its Types
-                  </p>
-                  <button
-                    type="button"
-                    onClick={openModal}
-                    className="text-white border border-white px-4 py-2 self-center"
-                  >
-                    Download
-                  </button>
+          <Fancybox>
+            <div className="mt-4 grid grid-cols-5 gap-4">
+              <a
+                data-fancybox="gallery"
+                href="https://solmc.in/demo/video/dr-k-kanthi-swaroop.mp4"
+                className="aspect-square flex items-center justify-center text-white p-3 flex-col gap-2 text-center"
+              >
+                <video
+                  className="rounded h-full"
+                  src="https://solmc.in/demo/video/dr-k-kanthi-swaroop.mp4"
+                />
+                <p>Benefits of Pneumococcal Vaccine in Diabetic patients</p>
+                <p>Dr. K. Kanthi Swaroop</p>
+              </a>
+              <a
+                data-fancybox="gallery"
+                href="https://solmc.in/demo/video/dr-J-ramdas.mp4"
+                className="aspect-square flex items-center justify-center text-white p-3 flex-col gap-2 text-center"
+              >
+                <video
+                  className="rounded h-full"
+                  src="https://solmc.in/demo/video/dr-J-ramdas.mp4"
+                />
+                <p>Benefits of Pneumococcal Vaccine in COPD patients</p>
+                <p>Dr. J. Ramadas</p>
+              </a>
+              <a
+                data-fancybox="gallery"
+                href="https://solmc.in/demo/video/dr-s-p-rai.mp4"
+                className="aspect-square flex items-center justify-center text-white p-3 flex-col gap-2 text-center"
+              >
+                <video
+                  className="rounded h-full"
+                  src="https://solmc.in/demo/video/dr-s-p-rai.mp4"
+                />
+                <p>Benefits of Pneumococcal Vaccine in Diabetic patients</p>
+                <p>Dr. S. P. Rai</p>
+              </a>
+              <a
+                data-fancybox="gallery"
+                href="https://solmc.in/demo/video/dr-s-p-matthew-n.mp4"
+                className="aspect-square flex items-center justify-center text-white p-3 flex-col gap-2 text-center"
+              >
+                <video
+                  className="rounded h-full"
+                  src="https://solmc.in/demo/video/dr-s-p-matthew-n.mp4"
+                />
+                <p>Benefits of Pneumococcal Vaccine in Diabetic patients</p>
+                <p>Dr. S. P. Matthew</p>
+              </a>
+              <a
+                data-fancybox="gallery"
+                href="https://solmc.in/demo/video/dr-nandini-banerjee.mp4"
+                className="aspect-square flex items-center justify-center text-white p-3 flex-col gap-2 text-center"
+              >
+                <video
+                  className="rounded h-full"
+                  src="https://solmc.in/demo/video/dr-nandini-banerjee.mp4"
+                />
+                <p>Benefits of Pneumococcal Vaccine in COPD patients</p>
+                <p>Dr. Nandini Banerjee</p>
+              </a>
+              <Link
+                to="./gccpl-medical-leaflet-final.pdf"
+                download
+                target="_blank"
+                className="aspect-square flex items-center justify-center text-white p-3 flex-col gap-2 text-center"
+              >
+                <div className="aspect-square">
+                  <img
+                    className="rounded w-full h-full object-cover"
+                    src={LEAFLET}
+                    alt="leaflet"
+                  />
                 </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="flex flex-col space-y-3">
-                  <img src={SLIDE2} alt="img1" width={"100%"} height={"auto"} />
-                  <p className="text-white text-xl 2xl:text-xl xl:text-base text-center line-clamp-2 min-h-[56px]">
-                    Pneumonia & Prevention Types
-                  </p>
-                  <button
-                    type="button"
-                    onClick={openModal}
-                    className="text-white border border-white px-4 py-2 self-center"
-                  >
-                    Download
-                  </button>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="flex flex-col space-y-3">
-                  <img src={SLIDE3} alt="img1" width={"100%"} height={"auto"} />
-                  <p className="text-white text-xl 2xl:text-xl xl:text-base text-center line-clamp-2 min-h-[56px]">
-                    Pneumonia in Asthma & COPD
-                  </p>
-                  <button
-                    type="button"
-                    onClick={openModal}
-                    className="text-white border border-white px-4 py-2 self-center"
-                  >
-                    Download
-                  </button>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="flex flex-col space-y-3">
-                  <img src={SLIDE4} alt="img1" width={"100%"} height={"auto"} />
-                  <p className="text-white text-xl 2xl:text-xl xl:text-base text-center line-clamp-2 min-h-[56px]">
-                    Pneumonia in Adults
-                  </p>
-                  <button
-                    type="button"
-                    onClick={openModal}
-                    className="text-white border border-white px-4 py-2 self-center"
-                  >
-                    Download
-                  </button>
-                </div>
-              </SwiperSlide>
-              <SwiperSlide>
-                <div className="flex flex-col space-y-3">
-                  <img src={SLIDE5} alt="img1" width={"100%"} height={"auto"} />
-                  <p className="text-white text-xl 2xl:text-xl xl:text-base text-center line-clamp-2 min-h-[56px]">
-                    Pneumonia Vaccination & Lifestyle
-                  </p>
-                  <button
-                    type="button"
-                    onClick={openModal}
-                    className="text-white border border-white px-4 py-2 self-center"
-                  >
-                    Download
-                  </button>
-                </div>
-              </SwiperSlide>
-            </Swiper>
-          </div>
+                <p>GCCPL Leaflet</p>
+              </Link>
+            </div>
+          </Fancybox>
         </div>
       </section>
       <DownloadModal show={show} setShow={setShow} />
