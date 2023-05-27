@@ -123,17 +123,17 @@ export default function Header() {
             </div>
           </div>
           <div
-            className={`navLink has_dropdown ${
-              location.pathname.includes("pneumococcal-vaccines/") &&
+            className={`navLink ${
+              location.pathname.includes("pneumococcal-vaccines") &&
               "bg-lime-500"
             }`}
           >
-            <NavLink to="/pneumococcal-vaccines/types">
+            <NavLink to="/pneumococcal-vaccines">
               Pneumococcal
               <br />
               Vaccines
             </NavLink>
-            <div className="dropdown">
+            {/* <div className="dropdown">
               <NavLink
                 to="/pneumococcal-vaccines/types"
                 className={({ isActive, isPending }) =>
@@ -150,7 +150,7 @@ export default function Header() {
               >
                 Benefits
               </NavLink>
-            </div>
+            </div> */}
           </div>
         </nav>
         <div className="flex gap-2">

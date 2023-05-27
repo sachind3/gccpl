@@ -15,6 +15,7 @@ import Benefits from "./pages/pneumococcal-vaccines/Benefits";
 import References from "./pages/References";
 import FindDoctors from "./pages/FindDoctors";
 import { AnimatePresence } from "framer-motion";
+import Pnvaccines from "./pages/pneumococcal-vaccines";
 
 function App() {
   const location = useLocation();
@@ -45,8 +46,9 @@ function App() {
             <Route path="patient-awareness" element={<Patientawareness />} />
           </Route>
           <Route path="pneumococcal-vaccines">
-            <Route path="types" element={<Types />} />
-            <Route path="benefits" element={<Benefits />} />
+            {/* <Route path="types" element={<Types />} />
+            <Route path="benefits" element={<Benefits />} /> */}
+            <Route index element={<Pnvaccines />} />
           </Route>
           <Route path="references" element={<References />} />
           <Route path="find-doctors" element={<FindDoctors />} />

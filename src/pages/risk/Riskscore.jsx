@@ -20,19 +20,19 @@ export default function Riskscore() {
   };
   useEffect(() => {
     if (score === 0) {
-      setDeg(-78);
+      setDeg(-90);
     } else if (score === 1) {
-      setDeg(-53);
-    } else if (score === 2) {
-      setDeg(-26);
-    } else if (score === 3) {
       setDeg(0);
+    } else if (score === 2) {
+      setDeg(18);
+    } else if (score === 3) {
+      setDeg(36);
     } else if (score === 4) {
-      setDeg(26);
+      setDeg(54);
     } else if (score === 5) {
-      setDeg(53);
+      setDeg(72);
     } else {
-      setDeg(78);
+      setDeg(90);
     }
   }, [score]);
   return (
@@ -91,11 +91,13 @@ export default function Riskscore() {
               </label>
             </div>
             <div className="col-span-2 mx-auto">
-              <div className="relative border-b-8 border-lime-500">
-                <div className="arrow" style={{ rotate: `${deg}deg` }}></div>
-                <div className="arrowCircle"></div>
-                <img src={METER} width={"100%"} height={"100%"} alt="meter" />
-                <div className="absolute bottom-14 text-white font-bold text-3xl text-center w-full z-10">
+              <div className="relative">
+                <div>
+                  <div className="arrow" style={{ rotate: `${deg}deg` }}></div>
+                  <div className="arrowCircle"></div>
+                  <img src={METER} width={"100%"} height={"100%"} alt="meter" />
+                </div>
+                <div className="text-white font-bold text-3xl text-center w-full z-10 pt-3 ">
                   Risk Score
                 </div>
               </div>

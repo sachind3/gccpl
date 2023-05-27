@@ -89,7 +89,7 @@ export default function Riskfactor() {
             <div className="text-white text-3xl 2xl:text-3xl xl:text-xl mb-3 font-bold">
               {showPara.label}
             </div>
-            <div className="text-white text-xl 2xl:text-xl">
+            <div className="text-white text-2xl 2xl:text-2xl font-medium">
               {showPara.para}
             </div>
           </div>

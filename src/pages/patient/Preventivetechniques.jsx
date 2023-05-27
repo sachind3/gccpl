@@ -5,7 +5,7 @@ import TransitionEffect from "../../components/TransitionEffect";
 import { Helmet } from "react-helmet";
 
 export default function Preventivetechniques() {
-  const [show, setShow] = useState(false);
+  // const [show, setShow] = useState(false);
   return (
     <>
       <Helmet>
@@ -22,7 +22,7 @@ export default function Preventivetechniques() {
               Vaccination is the most important Preventive technique against
               pneumonia
             </div>
-            {!show && (
+            {/* {!show && (
               <button
                 className="bg-transparent text-white border border-white py-2 px-4 mb-8 hover:bg-white hover:text-teal-500 duration-500"
                 onClick={() => setShow(!show)}
@@ -56,7 +56,7 @@ export default function Preventivetechniques() {
                   been introduced in 2020-21 due to the pandemic.
                 </p>
               </>
-            )}
+            )} */}
           </div>
         </div>
         <img
