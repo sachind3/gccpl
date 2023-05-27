@@ -27,7 +27,7 @@ export default function Layout() {
 
       <Link
         to={"/find-doctors"}
-        className="fixed bottom-4 z-20 right-3 cursor-pointer w-[120px]"
+        className="fixed bottom-4 z-20 right-3 cursor-pointer w-[150px]"
       >
         <img src={DOCUNIT} alt="img" />
       </Link>

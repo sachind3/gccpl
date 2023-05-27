@@ -15,6 +15,9 @@
   }
 }
 @layer utilities {
+  .arial {
+    font-family: Arial, Helvetica, sans-serif
+  }
   #root {
     @apply h-full;
   }

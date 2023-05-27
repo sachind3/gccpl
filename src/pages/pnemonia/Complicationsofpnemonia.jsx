@@ -19,8 +19,8 @@ export default function Complicationsofpnemonia() {
       <section className="section-Complicationsofpnemonia section-page py-12 flex items-center justify-center">
         <div className="container mx-auto px-4">
           <h1 className="heading1 mb-4">
-            <AnimatedWords title="Complications" />{" "}
-            <sup className="font-normal text-lg -translate-y-4 relative inline-block">
+            <AnimatedWords title="Complications" />
+            <sup className="font-normal text-lg -translate-y-4 relative inline-block arial">
               9, 10, 11, 12, 13, 15
             </sup>
           </h1>

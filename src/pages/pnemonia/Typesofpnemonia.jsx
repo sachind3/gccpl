@@ -17,7 +17,7 @@ export default function Typesofpnemonia() {
             <AnimatedWords title="Types of Pneumonia" />
           </h1>
           <div className="text-white text-xl 2xl:text-xl xl:text-lg">
-            Pneumonia can be classified in 2 ways. <sup>2</sup>
+            Pneumonia can be classified in 2 ways: <sup>2</sup>
           </div>
           <div className="grid text-white grid-cols-2 max-w-4xl mx-auto gap-8 mt-6">
             <div>

@@ -51,7 +51,7 @@ export default function Riskscore() {
           <h1 className="heading1 mb-4">
             <AnimatedWords title="Risk Score" />
           </h1>
-          <div className="w-full grid grid-cols-4 mt-8">
+          <div className="w-full grid grid-cols-4 mt-8 px-10">
             <div className="col-span-1 flex flex-col justify-end gap-6 leftcheck">
               <label htmlFor="risk1" className="customInput">
                 <input
@@ -91,7 +91,7 @@ export default function Riskscore() {
               </label>
             </div>
             <div className="col-span-2 mx-auto">
-              <div className="relative">
+              <div className="relative" style={{ transform: "scale(0.8)" }}>
                 <div>
                   <div className="arrow" style={{ rotate: `${deg}deg` }}></div>
                   <div className="arrowCircle"></div>
