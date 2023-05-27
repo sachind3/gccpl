@@ -38,6 +38,18 @@ export default function Patientawareness() {
             <div className="mt-4 grid grid-cols-5 gap-4">
               <a
                 data-fancybox="gallery"
+                href="https://solmc.in/demo/video/nap.mp4"
+                className="aspect-square flex items-center justify-center text-white p-3 flex-col gap-2 text-center"
+              >
+                <video
+                  className="rounded h-full"
+                  src="https://solmc.in/demo/video/nap.mp4"
+                />
+                <p>Pneumococcal Awareness</p>
+                <p>NAP</p>
+              </a>
+              <a
+                data-fancybox="gallery"
                 href="https://solmc.in/demo/video/dr-k-kanthi-swaroop.mp4"
                 className="aspect-square flex items-center justify-center text-white p-3 flex-col gap-2 text-center"
               >
