@@ -13,7 +13,7 @@ export default function Preventivetechniques() {
       </Helmet>
       <TransitionEffect />
       <section className="section-Preventivetechniques section-page flex items-center justify-center">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 md:px-8 sm:px-4">
           <div className="pt-12 2xl:pt-12 xl:pt-8 w-1/2">
             <h1 className="heading1 mb-4">
               <AnimatedWords title="Preventive Techniques" />
@@ -62,7 +62,7 @@ export default function Preventivetechniques() {
         <img
           src={PATIENTBG}
           alt="bg"
-          className="absolute right-0 bottom-0 h-[80%] w-auto"
+          className="absolute right-0 bottom-0 h-[60%] xl:h-[80%] lg:h-[60%] w-auto"
         />
       </section>
     </>

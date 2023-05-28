@@ -42,7 +42,7 @@ export default function Riskscore() {
       </Helmet>
       <TransitionEffect />
       <section className="section-Riskscore section-page flex items-center justify-center">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 md:px-8 sm:px-4">
           <div className="text-white text-2xl 2xl:text-2xl xl:text-xl font-semibold mb-4">
             Am I at risk of Pneumonia?
             <br />
@@ -51,8 +51,8 @@ export default function Riskscore() {
           <h1 className="heading1 mb-4">
             <AnimatedWords title="Risk Score" />
           </h1>
-          <div className="w-full grid grid-cols-4 mt-8 px-10">
-            <div className="col-span-1 flex flex-col justify-end gap-6 leftcheck">
+          <div className="w-full flex mt-8 px-10">
+            <div className="w-1/4 hidden flex-col justify-end gap-6 leftcheck xl:flex lg:hidden">
               <label htmlFor="risk1" className="customInput">
                 <input
                   type="checkbox"
@@ -89,20 +89,132 @@ export default function Riskscore() {
                 <i></i>
                 <span>I have Kidney Disease</span>
               </label>
+              <label htmlFor="risk4" className="customInput">
+                <input
+                  type="checkbox"
+                  className="hidden"
+                  id="risk4"
+                  value="risk4"
+                  name="risk"
+                  onChange={handleChange}
+                />
+                <i></i>
+                <span>My lungs are damaged due to Smoking/COPD</span>
+              </label>
+              <label htmlFor="risk5" className="customInput">
+                <input
+                  type="checkbox"
+                  className="hidden"
+                  id="risk5"
+                  value="risk5"
+                  name="risk"
+                  onChange={handleChange}
+                />
+                <i></i>
+                <span>I have Heart Disease</span>
+              </label>
+              <label htmlFor="risk6" className="customInput">
+                <input
+                  type="checkbox"
+                  className="hidden"
+                  id="risk6"
+                  value="risk6"
+                  name="risk"
+                  onChange={handleChange}
+                />
+                <i></i>
+                <span>My Immunity is suppressed</span>
+              </label>
             </div>
-            <div className="col-span-2 mx-auto">
-              <div className="relative" style={{ transform: "scale(0.8)" }}>
-                <div>
+            <div className="w-1/3 flex flex-col justify-end gap-6 rightcheck xl:hidden lg:flex">
+              <label htmlFor="risk1" className="customInput">
+                <input
+                  type="checkbox"
+                  className="hidden"
+                  id="risk1"
+                  value="risk1"
+                  name="risk"
+                  onChange={handleChange}
+                />
+                <i></i>
+                <span>I am above 65 years age</span>
+              </label>
+              <label htmlFor="risk2" className="customInput">
+                <input
+                  type="checkbox"
+                  className="hidden"
+                  id="risk2"
+                  value="risk2"
+                  name="risk"
+                  onChange={handleChange}
+                />
+                <i></i>
+                <span>I have Diabetes</span>
+              </label>
+              <label htmlFor="risk3" className="customInput">
+                <input
+                  type="checkbox"
+                  className="hidden"
+                  id="risk3"
+                  value="risk3"
+                  name="risk"
+                  onChange={handleChange}
+                />
+                <i></i>
+                <span>I have Kidney Disease</span>
+              </label>
+              <label htmlFor="risk4" className="customInput">
+                <input
+                  type="checkbox"
+                  className="hidden"
+                  id="risk4"
+                  value="risk4"
+                  name="risk"
+                  onChange={handleChange}
+                />
+                <i></i>
+                <span>My lungs are damaged due to Smoking/COPD</span>
+              </label>
+              <label htmlFor="risk5" className="customInput">
+                <input
+                  type="checkbox"
+                  className="hidden"
+                  id="risk5"
+                  value="risk5"
+                  name="risk"
+                  onChange={handleChange}
+                />
+                <i></i>
+                <span>I have Heart Disease</span>
+              </label>
+              <label htmlFor="risk6" className="customInput">
+                <input
+                  type="checkbox"
+                  className="hidden"
+                  id="risk6"
+                  value="risk6"
+                  name="risk"
+                  onChange={handleChange}
+                />
+                <i></i>
+                <span>My Immunity is suppressed</span>
+              </label>
+            </div>
+            <div className="w-1/2 col-span-2 mx-auto">
+              <div className="relative w-[520px] mx-auto">
+                <div className="relative w-full">
                   <div className="arrow" style={{ rotate: `${deg}deg` }}></div>
                   <div className="arrowCircle"></div>
                   <img src={METER} width={"100%"} height={"100%"} alt="meter" />
                 </div>
-                <div className="text-white font-bold text-3xl text-center w-full z-10 pt-3 ">
-                  Risk Score
+                <div className="text-white font-bold text-3xl text-center w-full z-10 pt-3 flex items-center justify-center">
+                  <div className="bg-gray-900 text-white px-3 rounded-md">
+                    Risk Score
+                  </div>
                 </div>
               </div>
             </div>
-            <div className="col-span-1 flex flex-col justify-end gap-6 rightcheck">
+            <div className="w-1/4 hidden flex-col justify-end gap-6 rightcheck xl:flex lg:hidden">
               <label htmlFor="risk4" className="customInput">
                 <input
                   type="checkbox"

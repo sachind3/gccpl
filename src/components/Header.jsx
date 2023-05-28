@@ -9,14 +9,14 @@ export default function Header() {
   const location = useLocation();
   return (
     <header className="bg-teal-500 shadow-2xl fixed top-0 left-0 z-10 w-full">
-      <div className="container mx-auto px-4 flex justify-between">
+      <div className="container mx-auto px-4 md:px-8 sm:px-4 flex justify-between">
         <nav className="flex divide-x-2 divide-teal-600">
           <div className="navLink bg-[#263677]">
             <Link to="/">
               <img
                 src={MAINLOGO}
                 alt="main logo"
-                className="h-[90px] 2xl:h-[90px] xl:h-16 w-auto"
+                className="h-[60px] 2xl:h-[90px] xl:h-16 lg:h-[60px] w-auto"
               />
             </Link>
           </div>
@@ -133,24 +133,6 @@ export default function Header() {
               <br />
               Vaccines
             </NavLink>
-            {/* <div className="dropdown">
-              <NavLink
-                to="/pneumococcal-vaccines/types"
-                className={({ isActive, isPending }) =>
-                  isPending ? "pending" : isActive ? "!bg-orange-600" : ""
-                }
-              >
-                Types
-              </NavLink>
-              <NavLink
-                to="/pneumococcal-vaccines/benefits"
-                className={({ isActive, isPending }) =>
-                  isPending ? "pending" : isActive ? "!bg-orange-600" : ""
-                }
-              >
-                Benefits
-              </NavLink>
-            </div> */}
           </div>
         </nav>
         <div className="flex gap-2">
@@ -166,21 +148,29 @@ export default function Header() {
             target="_blank"
             className="self-center"
           >
-            <img src={FBLOGO} alt="fb" className="w-11 xl:w-8" />
+            <img src={FBLOGO} alt="fb" className="w-7 2xl:w-11 xl:w-9 lg:w-7" />
           </NavLink>
           <NavLink
             to="https://www.instagram.com/vaximune/"
             target="_blank"
             className="self-center"
           >
-            <img src={INSTALOGO} alt="insta" className="w-11 xl:w-8" />
+            <img
+              src={INSTALOGO}
+              alt="insta"
+              className="w-7 2xl:w-11 xl:w-9 lg:w-7"
+            />
           </NavLink>
           <NavLink
             to="https://www.linkedin.com/company/gccpl/?originalSubdomain=in"
             target="_blank"
             className="self-center"
           >
-            <img src={LinkedinLOGO} alt="insta" className="w-11 xl:w-8" />
+            <img
+              src={LinkedinLOGO}
+              alt="insta"
+              className="w-7 2xl:w-11 xl:w-9 lg:w-7"
+            />
           </NavLink>
         </div>
       </div>

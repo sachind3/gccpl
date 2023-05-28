@@ -47,7 +47,7 @@ export default function Riskfactor() {
       </Helmet>
       <TransitionEffect />
       <section className="section-Riskfactor section-page flex items-start justify-center">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 md:px-8 sm:px-4">
           <h1 className="heading1 mb-4">
             <AnimatedWords title="Risk Factors" />
             <sup className="font-normal text-lg -translate-y-4 relative inline-block arial">
@@ -89,7 +89,7 @@ export default function Riskfactor() {
             <div className="text-white text-3xl 2xl:text-3xl xl:text-xl mb-3 font-bold">
               {showPara.label}
             </div>
-            <div className="text-white text-2xl 2xl:text-2xl font-medium">
+            <div className="text-white text-base 2xl:text-2xl xl:text-xl lg:text-base font-medium">
               {showPara.para}
             </div>
           </div>
@@ -98,7 +98,7 @@ export default function Riskfactor() {
             width={0}
             height={0}
             alt="icon"
-            className="absolute bottom-0 right-28 w-[424px] 2xl:w-[424px] xl:w-[380px]"
+            className="absolute bottom-0 right-28 w-[300px] 2xl:w-[424px] xl:w-[380px] lg:w-[300px]"
           />
         </div>
       </section>

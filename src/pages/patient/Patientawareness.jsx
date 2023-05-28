@@ -27,7 +27,7 @@ export default function Patientawareness() {
       </Helmet>
       <TransitionEffect />
       <section className="section-Patientawareness section-page flex items-center justify-center">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 md:px-8 sm:px-4">
           <h1 className="heading1">
             <AnimatedWords title="Pneumonia" />
           </h1>
@@ -35,7 +35,7 @@ export default function Patientawareness() {
             <AnimatedWords title="Awareness & Prevention" />
           </h1>
           <Fancybox>
-            <div className="mt-4 grid grid-cols-5 gap-4">
+            <div className="mt-4 grid grid-cols-2 xl:grid-cols-5 lg:grid-cols-4 md:grid-cols-3  gap-4">
               <a
                 data-fancybox="gallery"
                 href="https://solmc.in/demo/video/nap.mp4"

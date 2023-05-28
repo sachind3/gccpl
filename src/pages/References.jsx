@@ -11,7 +11,7 @@ export default function References() {
       </Helmet>
       <TransitionEffect />
       <section className="section-References section-page flex items-start justify-start relative">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 md:px-8 sm:px-4">
           <h1 className="heading1 mb-4">
             <AnimatedWords title="References" />
           </h1>
