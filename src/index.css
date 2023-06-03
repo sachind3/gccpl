@@ -183,14 +183,14 @@
   @apply justify-end;
 }
 .arrow {
-  background: url("./assets/risk/arrow.png");
-  @apply w-[49px] h-[250px] absolute left-0 right-0 mx-auto origin-bottom ease-in-out duration-700 top-[10px]
+  background: url("./assets/risk/arrow.png") no-repeat;
+  background-size: cover;
+  @apply w-[27px] h-[140px] xl:w-[49px] xl:h-[250px] lg:w-[37px] lg:h-[190px] md:w-[37px] md:h-[190px] sm:w-[27px] sm:h-[140px] absolute left-0 right-0 mx-auto origin-bottom ease-in-out duration-700 top-[9px] xl:top-[10px] lg:top-[10px] md:top-[10px] sm:top-[9px]
 }
 .arrowCircle {
   background: url("./assets/risk/arrowCircle.png");
   background-size: cover;
-  
-  @apply w-[45px] h-[45px] absolute left-0 right-0 mx-auto top-[235px]
+  @apply w-5 h-5 xl:w-[45px] xl:h-[45px] lg:w-8 lg:h-8 md:w-8 md:h-8 sm:w-5 sm:h-5 absolute left-0 right-0 mx-auto top-[140px] xl:top-[235px] lg:top-[184px] md:top-[184px] sm:top-[140px]
 }
 .selected {
   @apply relative;

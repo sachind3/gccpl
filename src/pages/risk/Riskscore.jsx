@@ -166,7 +166,7 @@ export default function Riskscore() {
             </div>
 
             <div className="w-full col-span-2 mx-auto lg:w-1/2 md:w-full">
-              <div className="relative w-[300px] xl:w-[520px] lg:w-[400px] md:w-[300px] mx-auto ">
+              <div className="relative w-[300px] xl:w-[520px] lg:w-[400px] md:w-[400px] sm:w-[300] mx-auto ">
                 <div className="relative w-full">
                   <div className="arrow" style={{ rotate: `${deg}deg` }}></div>
                   <div className="arrowCircle"></div>
