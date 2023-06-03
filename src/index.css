@@ -183,27 +183,14 @@
   @apply justify-end;
 }
 .arrow {
-  width: 49px;
-  height: 250px;
   background: url("./assets/risk/arrow.png");
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  top: 10px;
-  transform-origin: bottom center;
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  @apply w-[49px] h-[250px] absolute left-0 right-0 mx-auto origin-bottom ease-in-out duration-700 top-[10px]
 }
 .arrowCircle {
-  width: 45px;
-  height: 45px;
   background: url("./assets/risk/arrowCircle.png");
   background-size: cover;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  top: 235px;
+  
+  @apply w-[45px] h-[45px] absolute left-0 right-0 mx-auto top-[235px]
 }
 .selected {
   @apply relative;
