@@ -27,7 +27,7 @@ export default function Patientawareness() {
       </Helmet>
       <TransitionEffect />
       <section className="section-Patientawareness section-page flex items-center justify-center">
-        <div className="container mx-auto px-4 md:px-8 sm:px-4">
+        <div className="container mx-auto px-4 md:px-10 sm:px-4">
           <h1 className="heading1">
             <AnimatedWords title="Pneumonia" />
           </h1>

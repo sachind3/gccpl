@@ -11,7 +11,7 @@
     @apply h-full overflow-x-hidden;
   }
   body {
-    @apply pt-[60px] 2xl:pt-[90px] xl:pt-16 lg:pt-[60px];
+    @apply pt-[60px] 2xl:pt-[90px] xl:pt-[80px] lg:pt-[84px] md:pt-[60px];
   }
  
 }
@@ -23,7 +23,7 @@
     @apply h-full;
   }
   .navLink {
-    @apply px-4 py-3 2xl:py-3 xl:py-2 text-white font-semibold flex items-end leading-6;
+    @apply px-3 xl:px-4 lg:px-3 py-3 2xl:py-3 xl:py-2 text-white font-semibold  items-end leading-6 hidden lg:flex md:hidden;
   }
   .has_dropdown {
     @apply relative;
@@ -39,8 +39,30 @@
   .has_dropdown:hover .dropdown {
     @apply flex;
   }
+  .hamburger {
+    @apply block lg:hidden md:block relative w-8 h-5 place-self-center cursor-pointer
+  }
+  .hamburger span {
+    @apply w-full h-[2px] bg-white absolute top-0 transition-all duration-300 ease-in-out
+  }
+  .hamburger span:nth-child(2) {
+    @apply w-full h-[2px] bg-white absolute top-1/2
+  }
+  .hamburger span:last-child {
+    @apply w-full h-[2px] bg-white absolute top-full
+  }
+  .hamburger.active span:first-child {
+    @apply transform rotate-45 origin-center top-1/2
+  }
+  .hamburger.active span:nth-child(2) {
+    @apply scale-0
+  }
+  .hamburger.active span:last-child {
+    @apply transform -rotate-45 origin-center top-1/2
+  }
   .homeSlider {
-    @apply h-[calc(100dvh-60px)] 2xl:h-[calc(100dvh-90px)] xl:h-[calc(100dvh-64px)] lg:h-[calc(100dvh-60px)]; 
+    @apply h-[calc(100dvh-60px)] 2xl:h-[calc(100dvh-90px)] xl:h-[calc(100dvh-80px)] lg:h-[calc(100dvh-84px)] md:h-[calc(100dvh-60px)]; 
+    /* pt-[60px] 2xl:pt-[90px] xl:pt-[80px] lg:pt-[84px] md:pt-[60px]; */
   }
   .homeSlider .swiper-pagination .swiper-pagination-bullet {
     @apply transition-all duration-500 ease-out !mx-2;
@@ -82,7 +104,8 @@
     background-position: center right;
   }
   .section-page {
-    @apply min-h-[calc(100dvh-60px)] 2xl:min-h-[calc(100dvh-90px)] xl:min-h-[calc(100dvh-64px)] lg:min-h-[calc(100dvh-60px)] py-12 2xl:py-12 xl:py-8;
+    /* @apply min-h-[calc(100dvh-60px)] 2xl:min-h-[calc(100dvh-90px)] xl:min-h-[calc(100dvh-80px)] lg:min-h-[calc(100dvh-60px)] py-12 2xl:py-12 xl:py-8; */
+    @apply min-h-[calc(100dvh-60px)] 2xl:min-h-[calc(100dvh-90px)] xl:min-h-[calc(100dvh-80px)] lg:min-h-[calc(100dvh-84px)] md:min-h-[calc(100dvh-60px)] py-12 2xl:py-12 xl:py-8;
   }
   
   .heading1 {

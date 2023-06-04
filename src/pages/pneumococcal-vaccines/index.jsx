@@ -11,7 +11,7 @@ export default function Pnvaccines() {
       </Helmet>
       <TransitionEffect />
       <section className="section-Types section-page flex items-center justify-center relative">
-        <div className="container mx-auto px-4 md:px-8 sm:px-4 self-start">
+        <div className="container mx-auto px-4 md:px-10 sm:px-4 self-start">
           <h1 className="heading1 mb-4">
             <AnimatedWords title="Types of Pneumococcal Vaccines" />
           </h1>

@@ -17,7 +17,7 @@ export default function Complicationsofpnemonia() {
       </Helmet>
       <TransitionEffect />
       <section className="section-Complicationsofpnemonia section-page py-12 flex items-center justify-center">
-        <div className="container mx-auto px-4 md:px-8 sm:px-4">
+        <div className="container mx-auto px-4 md:px-10 sm:px-4">
           <h1 className="heading1 mb-4">
             <AnimatedWords title="Complications" />
             <sup className="font-normal text-lg -translate-y-4 relative inline-block arial">

@@ -13,7 +13,7 @@ export default function Preventivetechniques() {
       </Helmet>
       <TransitionEffect />
       <section className="section-Preventivetechniques section-page flex items-center justify-center">
-        <div className="container mx-auto px-4 md:px-8 sm:px-4">
+        <div className="container mx-auto px-4 md:px-10 sm:px-4">
           <div className="pt-12 2xl:pt-12 xl:pt-8 w-1/2">
             <h1 className="heading1 mb-4">
               <AnimatedWords title="Preventive Techniques" />

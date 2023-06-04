@@ -4,14 +4,19 @@ import FBLOGO from "./../assets/images/fb.png";
 import INSTALOGO from "./../assets/images/insta.png";
 import LinkedinLOGO from "./../assets/images/linkedin.png";
 import { Link, NavLink, useLocation } from "react-router-dom";
+import { useState } from "react";
 
 export default function Header() {
   const location = useLocation();
+  const [showMenu, setShowMenu] = useState(false);
+  const handleMenu = () => {
+    setShowMenu(!showMenu);
+  };
   return (
     <header className="bg-teal-500 shadow-2xl fixed top-0 left-0 z-10 w-full">
       <div className="container mx-auto px-4 md:px-8 sm:px-4 flex justify-between">
         <nav className="flex divide-x-2 divide-teal-600">
-          <div className="navLink bg-[#263677]">
+          <div className="navLink bg-[#263677] !flex">
             <Link to="/">
               <img
                 src={MAINLOGO}
@@ -21,7 +26,7 @@ export default function Header() {
             </Link>
           </div>
           <div
-            className={`navLink has_dropdown ${
+            className={`navLink has_dropdown  ${
               location.pathname.includes("pnemonia/") && "bg-lime-500"
             }`}
           >
@@ -62,7 +67,7 @@ export default function Header() {
             </div>
           </div>
           <div
-            className={`navLink  ${
+            className={`navLink   ${
               location.pathname.includes("disease-burden") && "bg-lime-500"
             }`}
           >
@@ -73,7 +78,7 @@ export default function Header() {
             </NavLink>
           </div>
           <div
-            className={`navLink has_dropdown ${
+            className={`navLink  has_dropdown ${
               location.pathname.includes("risk/") && "bg-lime-500"
             }`}
           >
@@ -102,7 +107,7 @@ export default function Header() {
             </div>
           </div>
           <div
-            className={`navLink has_dropdown ${
+            className={`navLink  has_dropdown ${
               location.pathname.includes("patient/") && "bg-lime-500"
             }`}
           >
@@ -123,7 +128,7 @@ export default function Header() {
             </div>
           </div>
           <div
-            className={`navLink ${
+            className={`navLink  ${
               location.pathname.includes("pneumococcal-vaccines") &&
               "bg-lime-500"
             }`}
@@ -135,7 +140,7 @@ export default function Header() {
             </NavLink>
           </div>
         </nav>
-        <div className="flex gap-2">
+        <div className="gap-2 hidden lg:flex md:hidden">
           <NavLink
             to={"https://gccpl.com/"}
             target="_blank"
@@ -172,6 +177,14 @@ export default function Header() {
               className="w-7 2xl:w-11 xl:w-9 lg:w-7"
             />
           </NavLink>
+        </div>
+        <div
+          className={`hamburger ${showMenu ? `active` : ""}`}
+          onClick={handleMenu}
+        >
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
     </header>

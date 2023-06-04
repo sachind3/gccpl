@@ -13,7 +13,7 @@ export default function Types() {
       </Helmet>
       <TransitionEffect />
       <section className="section-Types section-page flex items-center justify-center relative !pt-0">
-        <div className="container mx-auto px-4 md:px-8 sm:px-4 flex gap-3 w-full self-start">
+        <div className="container mx-auto px-4 md:px-10 sm:px-4 flex gap-3 w-full self-start">
           <div className=" pt-12 2xl:pt-12 xl:pt-8 w-1/2">
             <h1 className="heading1 mb-4 w-72">
               <AnimatedWords title="Types of Pneumococcal Vaccines" />
