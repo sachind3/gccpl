@@ -11,7 +11,7 @@
     @apply h-full overflow-x-hidden;
   }
   body {
-    @apply pt-[60px] 2xl:pt-[90px] xl:pt-[80px] lg:pt-[84px] md:pt-[60px];
+    @apply pt-[60px] 2xl:pt-[90px] xl:pt-[80px] lg:pt-[84px] md:pt-[84px];
   }
  
 }
@@ -61,7 +61,7 @@
     @apply transform -rotate-45 origin-center top-1/2
   }
   .homeSlider {
-    @apply h-[calc(100dvh-60px)] 2xl:h-[calc(100dvh-90px)] xl:h-[calc(100dvh-80px)] lg:h-[calc(100dvh-84px)] md:h-[calc(100dvh-60px)]; 
+    @apply h-[calc(100dvh-60px)] 2xl:h-[calc(100dvh-90px)] xl:h-[calc(100dvh-80px)] lg:h-[calc(100dvh-84px)] md:h-[calc(100dvh-84px)]; 
     /* pt-[60px] 2xl:pt-[90px] xl:pt-[80px] lg:pt-[84px] md:pt-[60px]; */
   }
   .homeSlider .swiper-pagination .swiper-pagination-bullet {
@@ -104,8 +104,7 @@
     background-position: center right;
   }
   .section-page {
-    /* @apply min-h-[calc(100dvh-60px)] 2xl:min-h-[calc(100dvh-90px)] xl:min-h-[calc(100dvh-80px)] lg:min-h-[calc(100dvh-60px)] py-12 2xl:py-12 xl:py-8; */
-    @apply min-h-[calc(100dvh-60px)] 2xl:min-h-[calc(100dvh-90px)] xl:min-h-[calc(100dvh-80px)] lg:min-h-[calc(100dvh-84px)] md:min-h-[calc(100dvh-60px)] py-12 2xl:py-12 xl:py-8;
+    @apply min-h-[calc(100dvh-60px)] 2xl:min-h-[calc(100dvh-90px)] xl:min-h-[calc(100dvh-80px)] lg:min-h-[calc(100dvh-84px)] md:min-h-[calc(100dvh-84px)] py-12 2xl:py-12 xl:py-8;
   }
   
   .heading1 {

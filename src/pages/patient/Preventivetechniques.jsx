@@ -12,9 +12,9 @@ export default function Preventivetechniques() {
         <title>Preventive Techniques | GCCPL</title>
       </Helmet>
       <TransitionEffect />
-      <section className="section-Preventivetechniques section-page flex items-center justify-center">
+      <section className="section-Preventivetechniques section-page flex flex-col lg:flex-row md:flex-col items-start lg:items-center md:items-start justify-center">
         <div className="container mx-auto px-4 md:px-10 sm:px-4">
-          <div className="pt-12 2xl:pt-12 xl:pt-8 w-1/2">
+          <div className="w-full pt-12 2xl:pt-12 xl:pt-8 lg:w-1/2 md:w-full">
             <h1 className="heading1 mb-4">
               <AnimatedWords title="Preventive Techniques" />
             </h1>
@@ -22,47 +22,12 @@ export default function Preventivetechniques() {
               Vaccination is the most important Preventive technique against
               pneumonia
             </div>
-            {/* {!show && (
-              <button
-                className="bg-transparent text-white border border-white py-2 px-4 mb-8 hover:bg-white hover:text-teal-500 duration-500"
-                onClick={() => setShow(!show)}
-              >
-                Read More
-              </button>
-            )}
-            {show && (
-              <>
-                <p className="text-white text-lg 2xl:text-lg xl:text-base mb-4">
-                  Vaccines are available to protect against the bacteria{" "}
-                  <b>Pneumococcus (PCV-13 and PPSV-23 vaccines)</b>, and
-                  Hemophilus influenza type B (Hib vaccine). PCV-13 and Hib are
-                  given to infants and children under 5 years of age part of the
-                  immunization program in most countries. Older children and
-                  adults with risk factors and comorbid conditions mentioned
-                  above particularly those of reduced immunity, and those aged
-                  65 years or more, should also get the pneumococcal PPSV-23
-                  vaccine.
-                </p>
-                <p className="text-white text-lg 2xl:text-lg xl:text-base mb-4 font-bold">
-                  Pneumococcal vaccination is the most important technique to
-                  prevent majority of community acquired bacterial pneumonia
-                  (CABP) and also secondary bacterial pneumonia commonly seen
-                  with viral pneumonia.
-                </p>
-                <p className="text-white text-lg 2xl:text-lg xl:text-base mb-4">
-                  Influenza vaccine is to be taken annually and should be given
-                  to children, the elderly, and those with respiratory and other
-                  comorbid high-risk conditions mentioned. COVID vaccines have
-                  been introduced in 2020-21 due to the pandemic.
-                </p>
-              </>
-            )} */}
           </div>
         </div>
         <img
           src={PATIENTBG}
           alt="bg"
-          className="absolute right-0 bottom-0 h-[60%] xl:h-[80%] lg:h-[60%] w-auto"
+          className="relative lg:absolute md:relative right-0 bottom-0 w-[60%] lg:w-auto md:w-[60%] h-auto xl:h-[80%] lg:h-[60%] md:h-auto -mb-12 lg:-mb-0 md:-mb-12 self-end"
         />
       </section>
     </>

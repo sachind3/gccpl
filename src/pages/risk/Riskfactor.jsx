@@ -71,7 +71,7 @@ export default function Riskfactor() {
                         item.label === selectedTab
                           ? " text-white"
                           : "text-[#a4161d]"
-                      } relative z-10 text-2xl 2xl:text-2xl xl:text-xl font-bold my-4`}
+                      } relative z-[8] text-xl 2xl:text-2xl xl:text-xl  font-bold my-4`}
                     >
                       {item.label}
                     </div>
@@ -85,7 +85,7 @@ export default function Riskfactor() {
                 );
               })}
           </div>
-          <div className="w-1/2">
+          <div className="w-full lg:w-1/2 md:f-full">
             <div className="text-white text-3xl 2xl:text-3xl xl:text-xl mb-3 font-bold">
               {showPara.label}
             </div>
