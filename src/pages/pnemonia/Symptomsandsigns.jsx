@@ -3,6 +3,7 @@ import { AnimatedWords } from "../../components/Animations";
 import { useEffect, useState } from "react";
 import TransitionEffect from "../../components/TransitionEffect";
 import { Helmet } from "react-helmet";
+import MANIMG from "./../../assets/symptoms/mobileman.png";
 
 export default function Symptomsandsigns() {
   const [info, setInfo] = useState(null);
@@ -24,7 +25,7 @@ export default function Symptomsandsigns() {
               2
             </sup>
           </h1>
-          <div className="flex flex-col justify-start items-start w-1/2">
+          <div className="hidden 2xl:flex xl:hidden flex-col justify-start items-start w-1/2 ">
             <ul>
               {symptoms.length &&
                 symptoms.map((item) => {
@@ -43,7 +44,7 @@ export default function Symptomsandsigns() {
                 })}
             </ul>
           </div>
-          <div className="manImg aspect-[4/3] scale-100 2xl:scale-100 xl:scale-[72%] w-[999px] h-[749px] absolute bottom-0 right-[10%] 2xl:right-[10%] xl:right-[5%]  origin-bottom-right">
+          <div className="hidden 2xl:block xl:hidden manImg aspect-[4/3] scale-100 2xl:scale-100 xl:scale-[72%] w-[999px] h-[749px] absolute bottom-0 right-[10%] 2xl:right-[10%] xl:right-[5%]  origin-bottom-right">
             {info?.title && (
               <div
                 className={`absolute w-[250px] origin-center tooltipBox`}
@@ -55,6 +56,26 @@ export default function Symptomsandsigns() {
                 </div>
               </div>
             )}
+          </div>
+          <div className="flex 2xl:hidden xl:flex justify-center items-center">
+            <div className="block 2xl:hidden xl:block relative">
+              <img src={MANIMG} alt="man" />
+              <ul>
+                {symptoms.length &&
+                  symptoms.map((item) => {
+                    return (
+                      <li
+                        key={item.id}
+                        className={`bg-blue w-10 h-10 rounded-full absolute ${
+                          info?.title === item.title &&
+                          "bg-orange-500 font-semibold"
+                        }`}
+                        onClick={() => setInfo(item)}
+                      ></li>
+                    );
+                  })}
+              </ul>
+            </div>
           </div>
         </div>
       </section>

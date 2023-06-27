@@ -18,7 +18,7 @@ export default function Pnvaccines() {
           <div className="max-w-5xl w-full mx-auto">
             <img src={VACCINES} alt="vaccines" className="mb-4" />
 
-            <div className="flex flex-col divide-y-2 text-white px-32">
+            <div className="flex flex-col divide-y-2 text-white px-4 lg:px-32 md:px-4">
               <p className="py-2">
                 Reduces the overall risk of getting community acquired pneumonia
                 (CAP) by minimizing risk of acquiring community acquired

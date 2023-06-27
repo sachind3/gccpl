@@ -9,7 +9,7 @@ export default function Layout() {
     <>
       <Header />
       <Outlet />
-      <div className="fixed bottom-20 z-20 flex bg-lime-500 items-center justify-center text-sm text-white font-semibold left-[-125px] hover:left-0 duration-500 ease-out cursor-pointer">
+      <div className="fixed bottom-10 lg:bottom-20 md:bottom-20 z-20 flex bg-lime-500 items-center justify-center text-sm text-white font-semibold left-[-125px] hover:left-0 duration-500 ease-out cursor-pointer">
         <Link to={"mailto:pmt1@gccpl.com"} className="px-3">
           Quick Enquiry
         </Link>

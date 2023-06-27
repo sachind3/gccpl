@@ -19,7 +19,7 @@ export default function Typesofpnemonia() {
           <div className="text-white text-xl 2xl:text-xl xl:text-lg">
             Pneumonia can be classified in 2 ways: <sup>2</sup>
           </div>
-          <div className="grid text-white grid-cols-2 max-w-4xl mx-auto gap-8 mt-6">
+          <div className="grid text-white grid-cols-1 md:grid-cols-2 sm:grid-cols-1 max-w-4xl mx-auto gap-8 mt-6">
             <div>
               <div className="border-b-8 border-lime-500 flex items-center justify-center">
                 <img

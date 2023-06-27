@@ -16,7 +16,7 @@ export default function Diseaseburden() {
         <title>Disease Burden</title>
       </Helmet>
       <TransitionEffect />
-      <section className="section-Diseaseburden section-page  flex items-center justify-center">
+      <section className="section-Diseaseburden section-page flex items-center justify-center">
         <div className="container mx-auto px-4 md:px-10 sm:px-4">
           <h1 className="heading1 mb-4">
             <AnimatedWords title="Disease Burden" />
@@ -26,13 +26,13 @@ export default function Diseaseburden() {
           </h1>
           <div>
             <Swiper
-              slidesPerView={2}
+              slidesPerView={1}
               spaceBetween={60}
               breakpoints={{
                 1280: {
                   slidesPerView: 3,
                 },
-                1200: {
+                520: {
                   slidesPerView: 2,
                 },
               }}

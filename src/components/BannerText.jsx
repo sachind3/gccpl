@@ -2,7 +2,7 @@ import parse from "html-react-parser";
 export default function BannerText({ para, heading1, heading2, heading3 }) {
   return (
     <div
-      className={`slider_caption container absolute z-10 top-[40%] -translate-y-1/2 mx-auto left-0 right-0 px-4 md:px-8 sm:px-4 text-left text-white drop-shadow-lg`}
+      className={`slider_caption container absolute z-10  top-[70%] md:top-[40%] sm:top-[70%] -translate-y-1/2 mx-auto left-0 right-0 px-4 md:px-8 sm:px-4 text-left text-white drop-shadow-lg`}
     >
       <div className="overflow-hidden">
         <p>{parse(para)}</p>

@@ -204,7 +204,7 @@ export default function Header() {
       {showMenu && (
         <div className="fullScreen fixed top-0 z-[9] bg-teal-500 w-full h-[100dvh] pt-[84px] block lg:hidden md:block">
           <div className="container mx-auto px-4 md:px-8 sm:px-4">
-            <div className="flex flex-col justify-between gap-4 py-4 text-white text-xl">
+            <div className="flex flex-col justify-between gap-3 py-4 text-white text-lg">
               <NavLink to="/pnemonia/what-is-pnemonia">
                 What is Pneumonia?
               </NavLink>
@@ -229,6 +229,7 @@ export default function Header() {
               <NavLink to="/pneumococcal-vaccines">
                 Pneumococcal Vaccines
               </NavLink>
+              <NavLink to="/references">References</NavLink>
             </div>
           </div>
         </div>

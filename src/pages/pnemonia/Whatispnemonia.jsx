@@ -23,8 +23,8 @@ export default function Whatispnemonia() {
             fluid or pus. This can decrease the effective gaseous exchange of
             oxygen and carbon dioxide that occurs here.<sup>2</sup>
           </div>
-          <div className="grid text-white grid-cols-2 max-w-4xl mx-auto gap-8">
-            <div className="mt-4">
+          <div className="grid text-white grid-cols-1 md:grid-cols-2 sm:grid-cols-1  max-w-4xl mx-auto gap-8">
+            <div className="mt-2 md:mt-4 sm:mt-2">
               <div className="border-b-8 border-lime-500 flex items-center justify-center">
                 <img
                   src={IMG1}
@@ -41,7 +41,7 @@ export default function Whatispnemonia() {
                 Bacterial, Viral, Fungal, Parasitic
               </p>
             </div>
-            <div className="mt-4">
+            <div className="mt-2 md:mt-4 sm:mt-2">
               <div className="border-b-8 border-lime-500 flex items-center justify-center">
                 <img
                   src={IMG2}
