@@ -41,7 +41,7 @@ export default function Riskscore() {
         <title>Risk Score | GCCPL</title>
       </Helmet>
       <TransitionEffect />
-      <section className="section-Riskscore section-page flex items-center justify-center">
+      <section className="section-Riskscore section-page flex items-start xl:items-center lg:items-start justify-center">
         <div className="container mx-auto px-4 md:px-10 sm:px-4">
           <div className="text-white text-2xl 2xl:text-2xl xl:text-xl font-semibold mb-4">
             Am I at risk of Pneumonia?

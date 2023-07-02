@@ -39,7 +39,7 @@ export default function Patientawareness() {
               <a
                 data-fancybox="gallery"
                 href="https://solmc.in/demo/video/nap.mp4"
-                className="aspect-square flex items-center justify-center text-white p-3 flex-col gap-2 text-center"
+                className="aspect-square flex items-center justify-center text-white p-3 flex-col gap-2 text-center bg-teal-600 rounded-lg shadow"
               >
                 <video
                   className="rounded h-full"
@@ -51,7 +51,7 @@ export default function Patientawareness() {
               <a
                 data-fancybox="gallery"
                 href="https://solmc.in/demo/video/dr-k-kanthi-swaroop.mp4"
-                className="aspect-square flex items-center justify-center text-white p-3 flex-col gap-2 text-center"
+                className="aspect-square flex items-center justify-center text-white p-3 flex-col gap-2 text-center bg-teal-600 rounded-lg shadow"
               >
                 <video
                   className="rounded h-full"
@@ -63,7 +63,7 @@ export default function Patientawareness() {
               <a
                 data-fancybox="gallery"
                 href="https://solmc.in/demo/video/dr-J-ramdas.mp4"
-                className="aspect-square flex items-center justify-center text-white p-3 flex-col gap-2 text-center"
+                className="aspect-square flex items-center justify-center text-white p-3 flex-col gap-2 text-center bg-teal-600 rounded-lg shadow"
               >
                 <video
                   className="rounded h-full"
@@ -75,7 +75,7 @@ export default function Patientawareness() {
               <a
                 data-fancybox="gallery"
                 href="https://solmc.in/demo/video/dr-s-p-rai.mp4"
-                className="aspect-square flex items-center justify-center text-white p-3 flex-col gap-2 text-center"
+                className="aspect-square flex items-center justify-center text-white p-3 flex-col gap-2 text-center bg-teal-600 rounded-lg shadow"
               >
                 <video
                   className="rounded h-full"
@@ -87,7 +87,7 @@ export default function Patientawareness() {
               <a
                 data-fancybox="gallery"
                 href="https://solmc.in/demo/video/dr-s-p-matthew-n.mp4"
-                className="aspect-square flex items-center justify-center text-white p-3 flex-col gap-2 text-center"
+                className="aspect-square flex items-center justify-center text-white p-3 flex-col gap-2 text-center bg-teal-600 rounded-lg shadow"
               >
                 <video
                   className="rounded h-full"
@@ -99,7 +99,7 @@ export default function Patientawareness() {
               <a
                 data-fancybox="gallery"
                 href="https://solmc.in/demo/video/dr-nandini-banerjee.mp4"
-                className="aspect-square flex items-center justify-center text-white p-3 flex-col gap-2 text-center"
+                className="aspect-square flex items-center justify-center text-white p-3 flex-col gap-2 text-center bg-teal-600 rounded-lg shadow"
               >
                 <video
                   className="rounded h-full"
@@ -112,7 +112,7 @@ export default function Patientawareness() {
                 to="./gccpl-medical-leaflet-final.pdf"
                 download
                 target="_blank"
-                className="aspect-square flex items-center justify-center text-white p-3 flex-col gap-2 text-center"
+                className="aspect-square flex items-center justify-center text-white p-3 flex-col gap-2 text-center bg-teal-600 rounded-lg shadow"
               >
                 <div className="aspect-square">
                   <img

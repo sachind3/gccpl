@@ -18,6 +18,8 @@ export const symptoms = [
     img: IMG1,
     top: 16,
     left: 51,
+    x: 70,
+    y: 30,
   },
   {
     id: 2,
@@ -26,6 +28,8 @@ export const symptoms = [
     img: IMG2,
     top: 0,
     left: 54,
+    x: 55,
+    y: 5,
   },
   {
     id: 3,
@@ -34,6 +38,8 @@ export const symptoms = [
     img: IMG3,
     top: 18,
     left: 54,
+    x: 75,
+    y: 45,
   },
   {
     id: 4,
@@ -42,6 +48,8 @@ export const symptoms = [
     img: IMG4,
     top: 11,
     left: 52,
+    x: 55,
+    y: 30,
   },
   {
     id: 5,
@@ -50,6 +58,8 @@ export const symptoms = [
     img: IMG5,
     top: 11,
     left: 52,
+    x: 40,
+    y: 30,
   },
   {
     id: 6,
@@ -58,6 +68,8 @@ export const symptoms = [
     img: IMG6,
     top: 17,
     left: 28,
+    x: 45,
+    y: 15,
   },
   {
     id: 7,
@@ -66,6 +78,8 @@ export const symptoms = [
     img: IMG7,
     top: 0,
     left: 54,
+    x: 50,
+    y: 20,
   },
   {
     id: 8,
@@ -74,6 +88,8 @@ export const symptoms = [
     img: IMG8,
     top: 19,
     left: 25,
+    x: 20,
+    y: 45,
   },
   {
     id: 9,
@@ -82,6 +98,8 @@ export const symptoms = [
     img: IMG9,
     top: 44,
     left: 38,
+    x: 45,
+    y: 60,
   },
   {
     id: 10,
@@ -90,6 +108,8 @@ export const symptoms = [
     img: IMG10,
     top: 17,
     left: 28,
+    x: 25,
+    y: 30,
   },
   {
     id: 11,
@@ -98,6 +118,8 @@ export const symptoms = [
     img: IMG11,
     top: 5,
     left: 48,
+    x: 55,
+    y: 15,
   },
   {
     id: 12,
@@ -106,5 +128,7 @@ export const symptoms = [
     img: IMG12,
     top: 15,
     left: 28,
+    x: 50,
+    y: 50,
   },
 ];

@@ -14,17 +14,21 @@ export default function Header() {
   };
   return (
     <>
-      <header className="bg-teal-500 shadow-2xl fixed top-0 left-0 z-10 w-full">
-        <div className="container mx-auto px-4 md:px-8 sm:px-4 flex justify-between">
+      <header className="bg-teal-500 shadow-2xl fixed top-0 left-0 z-10 w-full h-[60px] 2xl:h-[90px] xl:h-[80px] lg:h-[84px] md:h-[84px]">
+        <div className="container mx-auto px-4 md:px-8 sm:px-4 flex justify-between h-full">
           <nav className="flex divide-x-2 divide-teal-600">
             <div className="navLink bg-[#263677] !flex">
-              <Link to="/">
+              <Link
+                to="/"
+                className="flex items-center justify-center w-full h-full"
+              >
                 <img
                   src={MAINLOGO}
                   alt="main logo"
                   width={164}
                   height={89}
-                  className="h-[60px] 2xl:h-[90px] xl:h-16 lg:h-[60px] w-auto"
+                  className="w-full h-full"
+                  // className="h-[36px] 2xl:h-[90px] xl:h-16 lg:h-[36px] w-auto"
                 />
               </Link>
             </div>
@@ -147,9 +151,14 @@ export default function Header() {
             <NavLink
               to={"https://gccpl.com/"}
               target="_blank"
-              className="bg-white flex items-center justify-center px-3"
+              className="bg-white flex items-center justify-center w-full h-full"
             >
-              <img src={GCCPLLOGO} alt="gccpl logo" priority="true" />
+              <img
+                src={GCCPLLOGO}
+                alt="gccpl logo"
+                priority="true"
+                className="w-fit h-fit"
+              />
             </NavLink>
             <NavLink
               to="https://www.facebook.com/Vaximune/"

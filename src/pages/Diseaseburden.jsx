@@ -16,7 +16,7 @@ export default function Diseaseburden() {
         <title>Disease Burden</title>
       </Helmet>
       <TransitionEffect />
-      <section className="section-Diseaseburden section-page flex items-center justify-center">
+      <section className="section-Diseaseburden section-page flex items-start xl:items-center lg:items-start justify-center">
         <div className="container mx-auto px-4 md:px-10 sm:px-4">
           <h1 className="heading1 mb-4">
             <AnimatedWords title="Disease Burden" />

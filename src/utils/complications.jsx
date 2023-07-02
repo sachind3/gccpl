@@ -13,6 +13,8 @@ export const complications = [
     img: IMG1,
     top: 24,
     left: 37.5,
+    x: 70,
+    y: 30,
   },
   {
     id: 2,
@@ -21,6 +23,8 @@ export const complications = [
     img: IMG2,
     top: 24,
     left: 37.5,
+    x: 20,
+    y: 45,
   },
   {
     id: 3,
@@ -29,6 +33,8 @@ export const complications = [
     img: IMG3,
     top: 24,
     left: 37.5,
+    x: 75,
+    y: 45,
   },
   {
     id: 4,
@@ -37,6 +43,8 @@ export const complications = [
     img: IMG4,
     top: 24,
     left: 37.5,
+    x: 55,
+    y: 30,
   },
   {
     id: 5,
@@ -45,6 +53,8 @@ export const complications = [
     img: IMG5,
     top: 24,
     left: 37.5,
+    x: 40,
+    y: 30,
   },
   {
     id: 6,
@@ -53,6 +63,8 @@ export const complications = [
     img: IMG6,
     top: 24,
     left: 37.5,
+    x: 45,
+    y: 15,
   },
   {
     id: 7,
@@ -61,5 +73,7 @@ export const complications = [
     img: IMG7,
     top: 24,
     left: 37.5,
+    x: 50,
+    y: 20,
   },
 ];
