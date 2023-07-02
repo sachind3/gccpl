@@ -50,11 +50,11 @@ export default function Riskfactor() {
         <div className="container mx-auto px-4 md:px-10 sm:px-4">
           <h1 className="heading1 mb-4">
             <AnimatedWords title="Risk Factors" />
-            <sup className="font-normal text-lg -translate-y-4 relative inline-block arial">
+            <sup className="font-normal text-lg translate-y-1 lg:-translate-y-4 md:translate-y-1 relative inline-block arial">
               14, 15, 16, 17, 18, 21
             </sup>
           </h1>
-          <div className="flex items-center justify-between gap-8 mb-3 mt-4">
+          <div className="flex items-center justify-start gap-3 lg:gap-8 md:gap-3 mb-3 mt-4 flex-wrap lg:flex-nowrap md:flex-wrap">
             {tabItems.length &&
               tabItems.map((item, index) => {
                 return (
@@ -62,16 +62,22 @@ export default function Riskfactor() {
                     key={index}
                     className={`${
                       item.label === selectedTab ? "selected" : "relative"
-                    } px-5 py-1 min-w-[100px] text-center cursor-pointer`}
+                    } px-2 lg:px-5 md:px-2 py-1 min-w-[100px] text-center cursor-pointer`}
                     onClick={() => setSelectedTab(item.label)}
                   >
-                    <img src={item.icon} width={100} height={100} alt="icon" />
+                    <img
+                      src={item.icon}
+                      width={100}
+                      height={100}
+                      className="w-[60px] h-[60px] lg:w-[100px] lg:h-[100px] md:w-[60px] md:h-[60px]"
+                      alt="icon"
+                    />
                     <div
                       className={`${
                         item.label === selectedTab
                           ? " text-white"
                           : "text-[#a4161d]"
-                      } relative z-[8] text-xl 2xl:text-2xl xl:text-xl  font-bold my-4`}
+                      } relative z-[8] text-base 2xl:text-2xl xl:text-xl lg:text-lg md:text-base font-bold my-2 lg:my-4 md:my-2`}
                     >
                       {item.label}
                     </div>
@@ -98,7 +104,7 @@ export default function Riskfactor() {
             width={0}
             height={0}
             alt="icon"
-            className="absolute bottom-0 right-40 w-[300px] 2xl:w-[424px] xl:w-[380px] lg:w-[300px]"
+            className="relative lg:absolute md:relative bottom-0 right-0 lg:right-40 md:right-0 w-[300px] 2xl:w-[424px] xl:w-[380px] lg:w-[300px] mt-3"
           />
         </div>
       </section>

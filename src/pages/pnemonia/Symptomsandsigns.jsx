@@ -80,7 +80,7 @@ export default function Symptomsandsigns() {
                   return (
                     <div
                       key={item.id}
-                      className={`bg-blue w-3 h-3  md:w-5 md:h-5  sm:w-3 sm:h-3 rounded-full absolute bg-orange-500 font-semibold circleImg2`}
+                      className={`bg-blue w-4 h-4  md:w-5 md:h-5  sm:w-4 sm:h-4 rounded-full absolute bg-orange-500 font-semibold circleImg2`}
                       style={{ top: `${item.y}%`, left: `${item.x}%` }}
                       onClick={() => setmobInfo({ show: true, info: item })}
                     ></div>

@@ -27,7 +27,7 @@ export default function Header() {
                   alt="main logo"
                   width={164}
                   height={89}
-                  className="w-full h-full"
+                  className="w-full h-full block"
                   // className="h-[36px] 2xl:h-[90px] xl:h-16 lg:h-[36px] w-auto"
                 />
               </Link>
@@ -239,6 +239,47 @@ export default function Header() {
                 Pneumococcal Vaccines
               </NavLink>
               <NavLink to="/references">References</NavLink>
+              <div className="flex gap-3 items-center justify-center">
+                <NavLink
+                  to="https://www.facebook.com/Vaximune/"
+                  target="_blank"
+                  className="self-center"
+                >
+                  <img
+                    src={FBLOGO}
+                    alt="facebook"
+                    width={44}
+                    height={44}
+                    className="w-7 2xl:w-11 xl:w-9 lg:w-7"
+                  />
+                </NavLink>
+                <NavLink
+                  to="https://www.instagram.com/vaximune/"
+                  target="_blank"
+                  className="self-center"
+                >
+                  <img
+                    src={INSTALOGO}
+                    alt="instagram"
+                    width={44}
+                    height={44}
+                    className="w-7 2xl:w-11 xl:w-9 lg:w-7"
+                  />
+                </NavLink>
+                <NavLink
+                  to="https://www.linkedin.com/company/gccpl/?originalSubdomain=in"
+                  target="_blank"
+                  className="self-center"
+                >
+                  <img
+                    src={LinkedinLOGO}
+                    alt="linkedin"
+                    width={44}
+                    height={44}
+                    className="w-7 2xl:w-11 xl:w-9 lg:w-7"
+                  />
+                </NavLink>
+              </div>
             </div>
           </div>
         </div>
